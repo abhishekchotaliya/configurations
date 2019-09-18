@@ -4,6 +4,7 @@
 
 module.exports = {
   config: {
+    scrollback: 2147483647,
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: 'stable',
@@ -138,11 +139,13 @@ module.exports = {
 //   "hyper-named-css-colors",
 
   plugins: [
+    "hyper-npm-theme",
+    "hyperterm-tabs",
     "hypercwd",
     "hyper-alt-click",
-	"hyper-search",
-	"hyper-statusline",
-    "hyper-npm-theme"
+    "hyper-search",
+    "hyper-statusline",
+    "hyper-hypest"
   ],
 
   // in development, you can create a directory under
